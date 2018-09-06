@@ -74,6 +74,15 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            i18n: '@kazupon/vue-i18n-loader'
+          }
+        }
       }
     ]
   },
